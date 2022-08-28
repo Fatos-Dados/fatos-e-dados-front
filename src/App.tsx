@@ -1,10 +1,14 @@
 import React from 'react'
-import { HelloWorld } from './components'
+import NavigationRoutes from './routes'
+import { GlobalStyle } from './styles/global'
 
 function App() {
 
   return (
-    <HelloWorld />
+    <>
+      <GlobalStyle />
+      <NavigationRoutes />
+    </>
   )
 }
 

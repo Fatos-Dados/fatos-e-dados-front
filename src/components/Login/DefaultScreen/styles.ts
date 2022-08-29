@@ -30,10 +30,24 @@ export const Container = styled(motion.section)`
      rgba(0, 0, 0, 0.12) 0px 4px 6px, 
      rgba(0, 0, 0, 0.17) 0px 12px 13px, 
      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    svg {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        font-size: 32px;
+        fill: ${colors.primary[1]};
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
     
     img {
         width: 245px;
         margin-block-end: -90px;
+        pointer-events: none;
     }
 
     span {

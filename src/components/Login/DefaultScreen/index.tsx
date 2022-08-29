@@ -2,6 +2,9 @@ import React, { ReactNode } from 'react'
 import withLayout from '../../../hocs/Layout/layout'
 import * as S from './styles'
 
+import { IoIosArrowBack } from 'react-icons/io';
+import { useNavigate } from 'react-router';
+
 import logo from "../../../assets/img/logo.svg"
 import { LoginLayoutProps } from './types'
 
@@ -18,6 +21,13 @@ const modal = {
 }
 
 const DefaultScreen = ({ children }: LoginLayoutProps) => {
+    const navigate = useNavigate()
+    const isHome = window.location.pathname === '/'
+
+    const returnLogin = () => {
+        navigate('/')
+    }
+
     return (
         <S.Container
             variants={modal}
@@ -25,6 +35,7 @@ const DefaultScreen = ({ children }: LoginLayoutProps) => {
             animate='animate'
             exit='exit'
         >
+            {!isHome && <IoIosArrowBack onClick={returnLogin} />}
             <img src={logo} alt="Logo" />
             <S.ChildrenContent>
                 {children}

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { colors } from "../../../utils/colors";
 
-export const Container = styled.section`
+import { motion } from "framer-motion"
+
+export const Container = styled(motion.section)`
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -43,7 +45,7 @@ export const Container = styled.section`
         position: absolute;
         height: 20%;
         width: 100%;
-        background: linear-gradient(260deg, ${colors.primary[1.2]} 0%, ${colors.primary[1]} 100%);
+        background: ${colors.primary[1.2]};
         bottom: 0px;
         z-index: -1;
         rotate: 180deg;

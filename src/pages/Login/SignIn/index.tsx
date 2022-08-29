@@ -17,17 +17,6 @@ export const SignIn = () => {
                 <Button background={colors.valid[0]}>
                     Iniciar Sessão
                 </Button>
-                <motion.div
-                    style={{
-                        width: 200,
-                        height: 200,
-                        borderRadius: 30,
-                        background: 'black',
-                        position: 'relative',
-                    }}
-                >
-
-                </motion.div>
             </S.ButtonsDiv>
         </DefaultScreen>
     )

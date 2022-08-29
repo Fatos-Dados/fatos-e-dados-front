@@ -50,6 +50,14 @@ export const Container = styled(motion.section)`
         pointer-events: none;
     }
 
+    .screen-line {
+        background: ${colors.primary[1.1]};
+        width: 50%;
+        height: 1px;
+        position: absolute;
+        top: 37%;
+    }
+
     span {
         color: ${colors.primary[1]};
         cursor: default;
@@ -74,4 +82,14 @@ export const Container = styled(motion.section)`
 export const ChildrenContent = styled.div`
     width: 100%;
     height: 'fit-content';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .welcome {
+        color: ${colors.primary[1]};
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1rem;
+    }
 `

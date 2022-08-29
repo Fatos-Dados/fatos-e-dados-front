@@ -37,11 +37,13 @@ const DefaultScreen = ({ children }: LoginLayoutProps) => {
         >
             {!isHome && <IoIosArrowBack onClick={returnLogin} />}
             <img src={logo} alt="Logo" />
+            <span className='screen-line' />
             <S.ChildrenContent>
+                <p className='welcome'>Seja bem-vindo!</p>
                 {children}
             </S.ChildrenContent>
             <span>@Fatos&amp;Dados</span>
-            <div className='clip-path' />
+            <span className='clip-path' />
         </S.Container>
     )
 }

@@ -2,9 +2,8 @@ import styled, { css } from "styled-components"
 import { colors } from "../../utils/colors"
 
 import { IStyledTextInput } from "./types"
-import { motion } from "framer-motion"
 
-export const TextInput = styled(motion.input) <IStyledTextInput>`
+export const TextInput = styled.input <IStyledTextInput>`
     outline: none;
     box-shadow: none;
     border-radius: 5px;

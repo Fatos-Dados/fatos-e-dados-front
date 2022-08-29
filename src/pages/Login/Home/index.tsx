@@ -2,15 +2,23 @@ import React from 'react'
 
 import * as S from "./styles"
 
+import { useNavigate } from 'react-router';
+
 import DefaultScreen from '../../../components/Login/DefaultScreen'
 import { Button } from '../../../components'
 import { colors } from '../../../utils/colors'
 
-export function Home() {
+export const Home = () => {
+    const navigate = useNavigate()
+
+    function loginNavigate() {
+        navigate('/login')
+    }
+
     return (
         <DefaultScreen>
             <S.ButtonsDiv>
-                <Button>
+                <Button handleClick={loginNavigate}>
                     Entrar
                 </Button>
                 <Button background={colors.valid[0.1]}>

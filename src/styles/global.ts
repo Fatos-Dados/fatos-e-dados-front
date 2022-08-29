@@ -30,10 +30,6 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
-  input::placeholder{
-    opacity: 0.5;
-  }
-
   input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }

@@ -6,7 +6,6 @@ import logo from "../../../assets/img/logo.svg"
 import { LoginLayoutProps } from './types'
 
 const DefaultScreen = ({ children }: LoginLayoutProps) => {
-
     return (
         <S.Container>
             <img src={logo} alt="Logo" />
@@ -14,6 +13,7 @@ const DefaultScreen = ({ children }: LoginLayoutProps) => {
                 {children}
             </S.ChildrenContent>
             <span>@Fatos&amp;Dados</span>
+            <div className='clip-path' />
         </S.Container>
     )
 }

@@ -5,6 +5,7 @@ export const colors = {
         0: '#1f1e1e',
         1: '#c4c2c2',
         1.1: transparentize(0.6, '#c4c2c2'),
+        1.2: darken(0.4, '#c4c2c2'),
     },
     danger: {
         0: '#a10000',
